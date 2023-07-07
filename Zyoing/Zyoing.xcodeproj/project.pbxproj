@@ -14,6 +14,8 @@
 		6B4552B62A57EEEE0035267D /* ZyoingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4552B52A57EEEE0035267D /* ZyoingUITests.swift */; };
 		6B4552B82A57EEEE0035267D /* ZyoingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4552B72A57EEEE0035267D /* ZyoingUITestsLaunchTests.swift */; };
 		6B4552CD2A57F63B0035267D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4552CC2A57F63B0035267D /* HomeView.swift */; };
+		6B4552D02A57F7B50035267D /* ZyoingMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4552CF2A57F7B50035267D /* ZyoingMapViewRepresentable.swift */; };
+		6B4552D22A57FB1D0035267D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4552D12A57FB1D0035267D /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		6B4552B52A57EEEE0035267D /* ZyoingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZyoingUITests.swift; sourceTree = "<group>"; };
 		6B4552B72A57EEEE0035267D /* ZyoingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZyoingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6B4552CC2A57F63B0035267D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6B4552CF2A57F7B50035267D /* ZyoingMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZyoingMapViewRepresentable.swift; sourceTree = "<group>"; };
+		6B4552D12A57FB1D0035267D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6B4552D32A580B220035267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,8 @@
 		6B4552992A57EEEC0035267D /* Zyoing */ = {
 			isa = PBXGroup;
 			children = (
+				6B4552D32A580B220035267D /* Info.plist */,
+				6B4552CE2A57F7920035267D /* ViewRepresentable */,
 				6B4552C62A57F5660035267D /* Core */,
 				6B4552C52A57F5450035267D /* Manager */,
 				6B4552C42A57F5360035267D /* App */,
@@ -139,6 +146,7 @@
 		6B4552C52A57F5450035267D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				6B4552D12A57FB1D0035267D /* LocationManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -189,6 +197,14 @@
 				6B4552CC2A57F63B0035267D /* HomeView.swift */,
 			);
 			path = HomeView;
+			sourceTree = "<group>";
+		};
+		6B4552CE2A57F7920035267D /* ViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				6B4552CF2A57F7B50035267D /* ZyoingMapViewRepresentable.swift */,
+			);
+			path = ViewRepresentable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4552D22A57FB1D0035267D /* LocationManager.swift in Sources */,
 				6B45529B2A57EEEC0035267D /* ZyoingApp.swift in Sources */,
 				6B4552CD2A57F63B0035267D /* HomeView.swift in Sources */,
+				6B4552D02A57F7B50035267D /* ZyoingMapViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +502,8 @@
 				DEVELOPMENT_TEAM = 6FUZ562L75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zyoing/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Better give access!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -513,6 +533,8 @@
 				DEVELOPMENT_TEAM = 6FUZ562L75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zyoing/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Better give access!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
